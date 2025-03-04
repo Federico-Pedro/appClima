@@ -4,7 +4,7 @@ const diffKelvin = 273.15;
 
 document.getElementById('searchButton').addEventListener('click', () =>{
     const city = document.getElementById('cityInput').value;
-    console.log(city)
+        
     if(city) {
         fetchWeather(city)
     } else {
@@ -16,11 +16,11 @@ document.getElementById('searchButton').addEventListener('click', () =>{
 document.getElementById('cityInput').addEventListener('keypress', (e) =>{
     if (e.key === 'Enter'){
     const city = document.getElementById('cityInput').value;
-    console.log(city)
+    
     if(city) {
         fetchWeather(city)
     } else {
-        alert('Ingrese una ciudad')
+        alert('Ingrese una ciudad válida')
     }
 }
 });
@@ -57,7 +57,7 @@ function showWeatherData(data){
     icoInfo.src = `https://openweathermap.org/img/wn/${icon}@2x.png`; //verificar en la documentacion como mostrar la imagen
 
     const descriptionInfo = document.createElement('p');
-    descriptionInfo.textContent = `El clima está ${description}`;
+    descriptionInfo.textContent = `El clima está con ${description}`;
 
     divResponseData.appendChild(cityInfo);
     divResponseData.appendChild(tempInfo);
