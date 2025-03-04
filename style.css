@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:wght@100..700&display=swap');
+
+body {
+    font-family: "Roboto Mono", serif;
+    background-color: #1a2551;
+    padding-top: 25px;
+    
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #22306aa4;
+    box-shadow: 0 2px 4px #0a0f20;
+    border-radius: 20px;
+}
+
+h1, h2, p {
+    color: rgb(243, 255, 108);
+    margin-bottom: 30px;
+}
+
+input[type="text"]{
+    padding: 10px;
+    font-size: 18px;
+    width: 70%;
+    background-color: #1a2551;
+    color: rgb(225, 145, 225);
+    line-height: 25px;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    
+}
+
+input[type="text"]::placeholder{
+    color: rgba(0, 255, 255, 0.689);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2f0b69;
+    color: rgb(255, 146, 255);
+    font-family: "Roboto Mono", serif;
+    cursor: pointer;
+    border: none;
+    transition: all 750ms ease;
+    box-shadow: 1px 2px 5px #2f0b69;
+
+}
+
+button:hover {
+    background-color: #5414bc;
+    /*color: rgb(58, 32, 58);*/
+}
+
+#responseData {
+    margin-top: 20px;
+    font-size: 18px;
+}
